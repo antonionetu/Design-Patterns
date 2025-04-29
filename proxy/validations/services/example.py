@@ -24,8 +24,6 @@ class Example:
         if utils.is_user(user, PROFESSOR):
             return ProfessorStrategy()
         
-        return AlunoStrategy()
-
     # Other patterns for service mutations
     def service_proxy(self, request, user_id):
         cache_key = f"validations__service_proxy__{user_id}"

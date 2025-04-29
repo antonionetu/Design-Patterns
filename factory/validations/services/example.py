@@ -23,8 +23,6 @@ class Example:
 
         if utils.is_user(user, PROFESSOR):
             return ProfessorStrategy()
-        
-        return AlunoStrategy()
 
     # Other patterns for service mutations
     def service_proxy(self, request, user_id):
