@@ -8,7 +8,6 @@ from validations.utils.users import *
 # View itself
 def example(request, user_id):
     context, template = factory(request, user_id)
-    print(context)
     return render(request, template, context)
 
 
